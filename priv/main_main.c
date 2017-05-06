@@ -255,7 +255,7 @@ void LibVEX_Init (
    vassert(sizeof(void*) == 4 || sizeof(void*) == 8);
    vassert(sizeof(void*) == sizeof(int*));
    vassert(sizeof(void*) == sizeof(HWord));
-   vassert(sizeof(unsigned long) == sizeof(SizeT));
+   vassert(sizeof(size_t) == sizeof(SizeT));
 
    vassert(VEX_HOST_WORDSIZE == sizeof(void*));
    vassert(VEX_HOST_WORDSIZE == sizeof(HWord));
