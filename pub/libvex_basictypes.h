@@ -63,7 +63,7 @@ typedef    signed long long int   Long;
    storage requirement:
    32 bits on a 32-bit architecture
    64 bits on a 64-bit architecture. */
-typedef  unsigned long SizeT;
+typedef  size_t SizeT;
 
 /* Always 128 bits. */
 typedef  UInt  U128[4];
@@ -141,7 +141,7 @@ typedef Addr64 Addr;
    it is 32 bits on a 32-bit host and 64 bits on a 64-bit host, and so
    it can safely be coerced to and from a pointer type on the host
    machine. */
-typedef  unsigned long HWord;
+typedef  size_t HWord;
 
 /* Set up VEX_HOST_WORDSIZE and VEX_REGPARM. */
 #undef VEX_HOST_WORDSIZE

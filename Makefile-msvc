@@ -33,7 +33,7 @@ $(DYNAMIC_LIBRARY_FILE): $(LIB_OBJS)
 
 pub\libvex_guest_offsets.h: $(PUB_HEADERS) auxprogs/genoffsets.c
 	$(CC_NATIVE) $(CCFLAGS) auxprogs\genoffsets.c \
-		/Fo:auxprogs\genoffsets.o /Fe:auxprogs\genoffsets.exe
+		/Fo:auxprogs\genoffsets.o /Fe:auxprogs\genoffsets.exe /wd4311
 	auxprogs\genoffsets.exe > pub\libvex_guest_offsets.h
 
 .SUFFIXES: .o .c
