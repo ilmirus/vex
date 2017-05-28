@@ -30,7 +30,7 @@ CFLAGS := -Ipub -Ipriv \
 	-Wcast-align -Wmissing-declarations \
 	-Wwrite-strings -Wformat -Wformat-security \
 	-std=gnu99 -fstrict-aliasing -fPIC \
-	$(EXTRA_CFLAGS)
+	$(EXTRA_CFLAGS) -DVEXMULTIARCH
 
 # If not debugging, put -g -O2 after any flags we inherit from our invoker
 # -O2 vs -O makes a significant difference, at least with gcc4
